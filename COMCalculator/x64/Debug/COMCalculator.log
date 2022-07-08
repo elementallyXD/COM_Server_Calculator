@@ -1,0 +1,7 @@
+﻿  ObjectsCalculator.cpp
+  RegisterServer.cpp
+  dllmain.cpp
+  Generating Code...
+     Creating library E:\proj\TestProjects\COMCalculator\x64\Debug\COMCalculator.lib and object E:\proj\TestProjects\COMCalculator\x64\Debug\COMCalculator.exp
+COMCalculator.exp : warning LNK4070: /OUT:ObjectsCalculator.dll directive in .EXP differs from output filename 'E:\proj\TestProjects\COMCalculator\x64\Debug\COMCalculator.dll'; ignoring directive
+  COMCalculator.vcxproj -> E:\proj\TestProjects\COMCalculator\x64\Debug\COMCalculator.dll

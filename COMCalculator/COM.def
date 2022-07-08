@@ -1,0 +1,11 @@
+;
+; COM.def : Declares the module parameters for the DLL.
+;
+
+LIBRARY		"ObjectsCalculator"
+
+EXPORTS
+    DllRegisterServer   PRIVATE
+    DllUnregisterServer PRIVATE
+    DllGetClassObject   PRIVATE
+    DllCanUnloadNow     PRIVATE
