@@ -23,5 +23,5 @@ const std::wstring g_versionName = L"COMObjectLib.Calculator.1";
 class IObjectsCalculator : public IUnknown
 {
 public:
-    STDMETHOD(CalculateObjects(std::wstring, std::wstring*))  PURE;
+    STDMETHOD(CalculateObjects())  PURE;
 };

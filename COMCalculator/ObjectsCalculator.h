@@ -20,7 +20,10 @@ public:
 	STDMETHOD_(ULONG, Release());
 
 	// IObjectsCalculator
-	STDMETHOD(CalculateObjects(std::wstring, std::wstring*));
+	STDMETHOD(CalculateObjects());
+
+private: 
+	void EnumerateRegKey(HKEY hKey) const;
 };
 
 class ObjectsCalculatorClassFactory : public IClassFactory

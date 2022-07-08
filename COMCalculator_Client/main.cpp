@@ -52,17 +52,21 @@ int main(void)
     pUnk->Release();
     if (FAILED(hr))
     {
-        std::cout << "QueryInterface() for IMath failed" << std::endl;
+        std::cout << "QueryInterface() for IObjectCalculator failed" << std::endl;
         return -1;
     }
 
     // Using COM functions
-    std::wstring result;
-    const std::wstring input = L"InSystem";
-    pObjectsCalculator->CalculateObjects(input, &result);
+    if (pObjectsCalculator->CalculateObjects() == S_FALSE)
+    {
+        std::wcout << "Error: Something goes wrong with COM Server." << std::endl;
+    }
+    else
+    {
+        std::wcout << "Enumerating was ended successfully" << std::endl;
+    }
     pObjectsCalculator->Release();
-    std::wcout << "Output: " << result << std::endl;
-
+    
     // Unitialize COM
     std::cout << "Shuting down COM" << std::endl;
     ::CoUninitialize();
